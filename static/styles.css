@@ -1,0 +1,18 @@
+.keyboard{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+.keyboard-btn{
+  width: 30%;
+  font-size: 30px;
+}
+.entry-input{
+  margin-top: 35px;
+  font-size: 30px;
+  min-height: 80px;
+}
+.backspace svg{
+  transform: scale(1.5);
+}
