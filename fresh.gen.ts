@@ -5,8 +5,11 @@
 import * as $_404 from "./routes/_404.tsx";
 import * as $_app from "./routes/_app.tsx";
 import * as $index from "./routes/index.tsx";
+import * as $App from "./islands/App.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $EntryInput from "./islands/EntryInput.tsx";
+import * as $RecentResult from "./islands/RecentResult.tsx";
+import * as $SearchResult from "./islands/SearchResult.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -16,8 +19,11 @@ const manifest = {
     "./routes/index.tsx": $index,
   },
   islands: {
+    "./islands/App.tsx": $App,
     "./islands/Counter.tsx": $Counter,
     "./islands/EntryInput.tsx": $EntryInput,
+    "./islands/RecentResult.tsx": $RecentResult,
+    "./islands/SearchResult.tsx": $SearchResult,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

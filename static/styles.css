@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   row-gap: 10px;
   column-gap: 10px;
+  width: 90%;
+  margin: 0 auto;
 }
 .keyboard-btn{
   width: 30%;
@@ -15,4 +17,28 @@
 }
 .backspace svg{
   transform: scale(1.5);
+}
+.search-container{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.search-container{
+  margin-bottom: 35px;
+}
+.search-res-group{
+  display: flex;
+  flex-direction: column;
+}
+.search-res{
+  font-weight: 300;
+}
+.search-result-container, .recent-results-container{
+  margin-top: 35px;
+}
+.back-btn{
+  margin-bottom: 30px;
+}
+.recently-searched-title{
+  margin: 35px 0;
 }

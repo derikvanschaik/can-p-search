@@ -1,10 +1,9 @@
-import { useState } from "https://esm.sh/v128/preact@10.19.6/hooks/src/index.js";
-import EntryInput from "../islands/EntryInput.tsx";
+import AppView from "../islands/App.tsx";
 
 export default function Home() {
   return (
     <div className="container">
-      <EntryInput />
+      <AppView />
     </div>
   );
 }

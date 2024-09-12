@@ -1,11 +1,18 @@
-import { useState } from "preact/hooks";
-
-export default function EntryInput() {
-    const [entry, setEntry] = useState("");
-
+import { useEffect } from "preact/hooks";
+interface props {
+    setAppView: (n: number) => void;
+    entry: string;
+    setEntry: (n: string) => void;
+}
+export default function EntryInput({ setAppView, entry, setEntry }: props) {
     return (
         <>
-            <article class="entry-input">{entry}</article>
+            <div class="search-container">
+                <article class="entry-input">{entry}</article>
+                <button class="outline primary" onClick={() => setAppView(1)}>
+                    Search
+                </button>
+            </div>
             <div className="keyboard">
                 {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map((num) => {
                     return (
