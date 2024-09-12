@@ -1,3 +1,10 @@
+/* mobile issues */
+button {
+  touch-action: manipulation;  /* Prevents double-tap zoom */
+  user-select: none;           /* Prevents text selection */
+}
+
+
 .keyboard{
   display: flex;
   flex-wrap: wrap;
